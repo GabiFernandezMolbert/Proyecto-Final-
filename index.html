@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este CV forma parte del proyecto final del curso 'Primeros Pasos del Desarrollo Frontend' llevado a cabo por el profesor Rinaldi.">
+    <meta name="keywords" content="CV, Proyecto final, Primeros Pasos del Desarrollo Frontend, HTML, CSS"/>
+    <meta name="author" content="Hernán Gabriel Fernández Molbert"/>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/fdc2ee65d3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Send+Flowers&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="java.js"></script>
+    <title>Proyecto Final</title>
+</head>
+<body>
+    <header>
+        <nav class="nav ">
+            <ul class="nav__ul nav__ul-visible">                            
+                <div class="container">
+                    <div class="row"> 
+                        <button class="nav__bars" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>           
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <li class="nav__li"><a href="#quiensoy" class="nav__li-a">¿Quién soy?</a></li>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <li class="nav__li"><a href="#conocimientos" class="nav__li-a">Conocimientos</a></li>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <li class="nav__li"><a href="#portfolio" class="nav__li-a">Portfolio</a></li>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <li class="nav__li"><a href="contacto.html" class="nav__li-a">Contacto</a></li>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="div__title">
+            <h1 class="div__h1">Bienvenidos a mi <span class="h1__span">CV</span></h1>
+            <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Foto del titular del CV" class="div__img">
+        </div>
+    </header>
+    <article>
+       <section class="section-1" id="quiensoy">
+            <h3 class="section-1__h3">¿Quién Soy?</h3>
+            <p class="section-1__p">¡Hola Mundo! Mi nombre es <b>Craig Morgan</b>, vivo en la Ciudad de Londres, 794 E Little York RD. <br>
+           A principios del año 2022 comencé a interesarme por el <b>Desarrollo Web</b> y adentrarme en este mundo que me quita el sueño.
+           A finales de es mismo año inicie un curso en Ticmas, "Primeros Pasos del Desarrollo Frontend", del cual este es el proyecto final.
+           En este proyecto espero poner en juego todo lo aprendido, lo cual supongo que es bastante. <br>
+           Para ello utilicé nociones de HTML para estructurar la página, CSS para ponerle estilo (colores, márgenes, colores de fondo, ubicaciones 
+           de los elementos HTML, etc.) y un poco de JavaScript. 
+           Espero que este CV sea de tu agrado!
+            </p>
+       </section>
+    </article>   
+    <article>
+        <section class="section-2">
+            <h3 id="conocimientos" class="section-2__h3">Conocimientos</h3>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-12 section-2__div">
+                        <h4>HTML</h4>
+                        <span class="hidep" id="hidePH">
+                            <p>Títulos, párrafos, enlaces, imágenes, videos, 
+                                metas, html semántico, formularios, etc.</p>
+                        </span>
+                        <button class="section2btn" id="hideP_btnH">Leer mas</button>
+                    </div>
+                    <div class="col-lg-3 col-md-12 section-2__div">
+                        <h4>CSS</h4>
+                        <span class="hidep" id="hidePC">
+                            <p>Diseños de los elementos html, colores de fondo,
+                               posicionamientos, estilos para diferentes tipos
+                               de pantallas (responsive design), etc.
+                            </p>
+                        </span>
+                        <button class="section2btn" id="hideP_btnC">Leer mas</button>
+                    </div>
+                    <div class="col-lg-3 col-md-12 section-2__div">
+                        <h4>JavaScript</h4> 
+                        <span class="hidep" id="hidePJs">
+                            <p>Variables (let, var, const), bucles(for, while, do-while),
+                               condicionales, eventos, etc.
+                            </p>
+                        </span>
+                        <button class="section2btn" id="hideP_btnJs">Leer mas</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </article>
+        <section class="containerDark" id="portfolio">
+            <div class="h3-toggle">
+                <h3 class="section-3__h3">Portfolio</h3>
+                <div class="modo" id="modo">
+                <i class="fa-solid fa-toggle-on"></i>
+                </div>
+            </div>
+            <div class="full-img" id="fullImgContainer">
+                <img id="fullImg" src="https://codewebbarcelona.com/wp-content/uploads/2016/12/mejores-dise%C3%B1os-web-2016-2017-3.jpeg" alt="imagen ficticia para ser parte del portfolio">
+                <span onclick="cerrarFullImg()">X</span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-4 col-md-6">
+                        <img class="section-3__img" onclick="abrirFullImg(this.src)" src="https://codewebbarcelona.com/wp-content/uploads/2016/12/mejores-dise%C3%B1os-web-2016-2017-3.jpeg" alt="imagen ficticia para ser parte del portfolio">
+                    </div>
+                    <div class="col col-lg-4 col-md-6">
+                        <img class="section-3__img" onclick="abrirFullImg(this.src)" src="https://codewebbarcelona.com/wp-content/uploads/2016/12/mejores-diseños-web-2016-2017-5.jpeg" alt="imagen ficticia para ser parte del portfolio">
+                    </div>
+                    <div class="col col-lg-4 col-md-6">
+                        <img class="section-3__img" onclick="abrirFullImg(this.src)" src="https://codewebbarcelona.com/wp-content/uploads/2016/12/mejores-diseños-web-2016-2017-8.jpeg" alt="imagen ficticia para ser parte del portfolio">
+                    </div>
+                
+                    <div class="col col-lg-4 col-md-6 col-xs-12">
+                        <img class="section-3__img" onclick="abrirFullImg(this.src)" src="https://codewebbarcelona.com/wp-content/uploads/2019/11/Active-Theory-02.jpg" alt="imagen ficticia para ser parte del portfolio">
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-xs-12">
+                        <img class="section-3__img" onclick="abrirFullImg(this.src)" src="https://codewebbarcelona.com/wp-content/uploads/2019/11/mejores-disenos-web-2019-2020-1.jpg" alt="imagen ficticia para ser parte del portfolio">
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-xs-12">
+                        <img class="section-3__img" onclick="abrirFullImg(this.src)" src="https://www.staffdigital.pe/blog/wp-content/uploads/mejores-dise%C3%B1os-p%C3%A1ginas-web-4.jpg" alt="imagen ficticia para ser parte del portfolio">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer class="footer">
+        <ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <li class="footer__li"><i class="fa-brands fa-facebook"></i></i><a href="https://facebook.com" target="_blank" class="footer__a">Facebook</a></li>                
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <li class="footer__li"><i class="fa-brands fa-instagram"></i><a href="https://instagram.com" target="_blank" class="footer__a">Instagram</a></li>                
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <li class="footer__li"><i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com" target="_blank" class="footer__a">Linkedin</a></li>                
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </footer>
+</body>
+</html>

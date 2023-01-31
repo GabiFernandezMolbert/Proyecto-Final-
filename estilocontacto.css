@@ -1,0 +1,138 @@
+* {
+    background-color: #0a0a0a;
+    font-family: quicksand;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 355px;
+}
+
+.header {
+    width: 100%;
+    background-color:#0a0a0a;
+}
+
+.titulo {
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 50px;
+    line-height: 100px;
+    padding: 2px 0 5px 0;
+    margin-bottom: 0;
+}
+
+span {
+    color: rgb(187, 34, 34);
+    font-size: 55px;
+}
+
+.label {
+    color: #f1f1f1;
+    display: block;
+    font-size: 35px;
+    margin: 0;
+}
+.div__label-input {
+    text-align: justify;
+    padding: 5px;
+}
+.cuadro {
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+    height: max-content;
+}
+
+.input {
+    width: 100%;
+    min-height: 50px;
+    background-color: #bababa;
+    box-shadow: #ffffff;
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.input:hover{
+    background-color: #e6e6e6;
+    transition: background-color 0.3s;
+}
+
+.text {
+    width: 100%;
+    text-align: justify;
+    color: #fff;
+    height: 100px;
+    font-size: 30px;
+}
+
+.div__text {
+    text-align: center;
+    padding: 15px;
+    margin: 15px 0;
+}
+.div__btn {
+    text-align: center;
+    margin: 5px;
+    color: #000;
+}
+.boton {
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    background: #bababa;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.boton:hover {
+    background: #f1f1f1;
+    transition: background 0.3s;
+}
+
+.btn__volver {
+    font-weight: bold;
+    font-size: 15px;
+    background: #bababa;
+    border-radius: 10px;
+    width: 70px;
+}
+
+.btn__volver a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn__volver:hover {
+    background: #f1f1f1;
+    transition: background 0.3s;
+}
+
+.btn__volver a:hover {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+} 
+
+@media only screen and (max-width: 767px) {
+    body {
+        overflow-y: scroll;
+    }
+    .label {
+        font-size: 30px;
+    }
+    .div__label-input {
+        text-align: center;
+        padding: 10px;
+    }
+    .input {
+        font-size: 20px;
+    }
+    .cuadro {
+        border: none;
+    }
+}
